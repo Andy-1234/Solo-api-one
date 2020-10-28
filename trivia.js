@@ -108,11 +108,6 @@ do{
 while(randomNumber4==randomNumber3||randomNumber4==randomNumber2||randomNumber4==randomNumber1)
 
 
-console.log(randomNumber1)
-console.log(randomNumber2)
-console.log(randomNumber3)
-console.log(randomNumber4)
-
 if(randomNumber1==1){
 document.getElementById("choice-1-1").innerHTML=JSON.parse(Trivia.response).results[0].correct_answer;
 }
@@ -170,7 +165,7 @@ if(randomNumber3==1){
     
     }
 
-set2()
+set2();
 }
 
 
@@ -199,10 +194,6 @@ do{
 while(randomNumber4==randomNumber3||randomNumber4==randomNumber2||randomNumber4==randomNumber1)
 
 
-console.log(randomNumber1)
-console.log(randomNumber2)
-console.log(randomNumber3)
-console.log(randomNumber4)
 
 if(randomNumber1==1){
 document.getElementById("choice-2-1").innerHTML=JSON.parse(Trivia.response).results[1].correct_answer;
@@ -261,5 +252,363 @@ if(randomNumber3==1){
     
     }
 
+    set3();
+}
+
+
+
+
+function set3(){
+var randomNumber1=Math.round(Math.random()*3)+1;
+var randomNumber2=Math.round(Math.random()*3)+1;
+var randomNumber3=Math.round(Math.random()*3)+1;
+var randomNumber4=Math.round(Math.random()*3)+1;
+
+
+  do{
+    randomNumber2=Math.round(Math.random()*3)+1;
+  }
+  while(randomNumber1==randomNumber2)
+
+
+do{
+  randomNumber3=Math.round(Math.random()*3)+1;
+}
+while(randomNumber3==randomNumber1||randomNumber3==randomNumber2)
+
+do{
+  randomNumber4=Math.round(Math.random()*3)+1;
+}
+while(randomNumber4==randomNumber3||randomNumber4==randomNumber2||randomNumber4==randomNumber1)
+
+
+
+if(randomNumber1==1){
+document.getElementById("choice-3-1").innerHTML=JSON.parse(Trivia.response).results[2].correct_answer;
+}
+else if(randomNumber1==2){
+  document.getElementById("choice-3-2").innerHTML=JSON.parse(Trivia.response).results[2].correct_answer;
+}
+else if(randomNumber1==3){
+  document.getElementById("choice-3-3").innerHTML=JSON.parse(Trivia.response).results[2].correct_answer;
+}
+else if(randomNumber1==4){
+  document.getElementById("choice-3-4").innerHTML=JSON.parse(Trivia.response).results[2].correct_answer;
 
 }
+
+
+if(randomNumber2==1){
+document.getElementById("choice-3-1").innerHTML=JSON.parse(Trivia.response).results[2].incorrect_answers[0];
+}
+else if(randomNumber2==2){
+  document.getElementById("choice-3-2").innerHTML=JSON.parse(Trivia.response).results[2].incorrect_answers[0];
+}
+else if(randomNumber2==3){
+  document.getElementById("choice-3-3").innerHTML=JSON.parse(Trivia.response).results[2].incorrect_answers[0];
+}
+else if(randomNumber2==4){
+  document.getElementById("choice-3-4").innerHTML=JSON.parse(Trivia.response).results[2].incorrect_answers[0];
+
+}
+
+if(randomNumber3==1){
+  document.getElementById("choice-3-1").innerHTML=JSON.parse(Trivia.response).results[2].incorrect_answers[1];
+  }
+  else if(randomNumber3==2){
+    document.getElementById("choice-3-2").innerHTML=JSON.parse(Trivia.response).results[2].incorrect_answers[1];
+  }
+  else if(randomNumber3==3){
+    document.getElementById("choice-3-3").innerHTML=JSON.parse(Trivia.response).results[2].incorrect_answers[1];
+  }
+  else if(randomNumber3==4){
+    document.getElementById("choice-3-4").innerHTML=JSON.parse(Trivia.response).results[2].incorrect_answers[1];
+  
+  }
+  
+  if(randomNumber4==1){
+    document.getElementById("choice-3-1").innerHTML=JSON.parse(Trivia.response).results[2].incorrect_answers[2];
+    }
+    else if(randomNumber4==2){
+      document.getElementById("choice-3-2").innerHTML=JSON.parse(Trivia.response).results[2].incorrect_answers[2];
+    }
+    else if(randomNumber4==3){
+      document.getElementById("choice-3-3").innerHTML=JSON.parse(Trivia.response).results[2].incorrect_answers[2];
+    }
+    else if(randomNumber4==4){
+      document.getElementById("choice-3-4").innerHTML=JSON.parse(Trivia.response).results[2].incorrect_answers[2];
+    
+    }
+
+set4();
+}
+
+
+
+
+
+function set4(){
+var randomNumber1=Math.round(Math.random()*3)+1;
+var randomNumber2=Math.round(Math.random()*3)+1;
+var randomNumber3=Math.round(Math.random()*3)+1;
+var randomNumber4=Math.round(Math.random()*3)+1;
+
+
+  do{
+    randomNumber2=Math.round(Math.random()*3)+1;
+  }
+  while(randomNumber1==randomNumber2)
+
+
+do{
+  randomNumber3=Math.round(Math.random()*3)+1;
+}
+while(randomNumber3==randomNumber1||randomNumber3==randomNumber2)
+
+do{
+  randomNumber4=Math.round(Math.random()*3)+1;
+}
+while(randomNumber4==randomNumber3||randomNumber4==randomNumber2||randomNumber4==randomNumber1)
+
+
+
+if(randomNumber1==1){
+document.getElementById("choice-4-1").innerHTML=JSON.parse(Trivia.response).results[3].correct_answer;
+}
+else if(randomNumber1==2){
+  document.getElementById("choice-4-2").innerHTML=JSON.parse(Trivia.response).results[3].correct_answer;
+}
+else if(randomNumber1==3){
+  document.getElementById("choice-4-3").innerHTML=JSON.parse(Trivia.response).results[3].correct_answer;
+}
+else if(randomNumber1==4){
+  document.getElementById("choice-4-4").innerHTML=JSON.parse(Trivia.response).results[3].correct_answer;
+
+}
+
+
+if(randomNumber2==1){
+document.getElementById("choice-4-1").innerHTML=JSON.parse(Trivia.response).results[3].incorrect_answers[0];
+}
+else if(randomNumber2==2){
+  document.getElementById("choice-4-2").innerHTML=JSON.parse(Trivia.response).results[3].incorrect_answers[0];
+}
+else if(randomNumber2==3){
+  document.getElementById("choice-4-3").innerHTML=JSON.parse(Trivia.response).results[3].incorrect_answers[0];
+}
+else if(randomNumber2==4){
+  document.getElementById("choice-4-4").innerHTML=JSON.parse(Trivia.response).results[3].incorrect_answers[0];
+
+}
+
+if(randomNumber3==1){
+  document.getElementById("choice-4-1").innerHTML=JSON.parse(Trivia.response).results[3].incorrect_answers[1];
+  }
+  else if(randomNumber3==2){
+    document.getElementById("choice-4-2").innerHTML=JSON.parse(Trivia.response).results[3].incorrect_answers[1];
+  }
+  else if(randomNumber3==3){
+    document.getElementById("choice-4-3").innerHTML=JSON.parse(Trivia.response).results[3].incorrect_answers[1];
+  }
+  else if(randomNumber3==4){
+    document.getElementById("choice-4-4").innerHTML=JSON.parse(Trivia.response).results[3].incorrect_answers[1];
+  
+  }
+  
+  if(randomNumber4==1){
+    document.getElementById("choice-4-1").innerHTML=JSON.parse(Trivia.response).results[3].incorrect_answers[2];
+    }
+    else if(randomNumber4==2){
+      document.getElementById("choice-4-2").innerHTML=JSON.parse(Trivia.response).results[3].incorrect_answers[2];
+    }
+    else if(randomNumber4==3){
+      document.getElementById("choice-4-3").innerHTML=JSON.parse(Trivia.response).results[3].incorrect_answers[2];
+    }
+    else if(randomNumber4==4){
+      document.getElementById("choice-4-4").innerHTML=JSON.parse(Trivia.response).results[3].incorrect_answers[2];
+    
+    }
+
+set5();
+}
+
+
+
+
+function set5(){
+var randomNumber1=Math.round(Math.random()*3)+1;
+var randomNumber2=Math.round(Math.random()*3)+1;
+var randomNumber3=Math.round(Math.random()*3)+1;
+var randomNumber4=Math.round(Math.random()*3)+1;
+
+
+  do{
+    randomNumber2=Math.round(Math.random()*3)+1;
+  }
+  while(randomNumber1==randomNumber2)
+
+
+do{
+  randomNumber3=Math.round(Math.random()*3)+1;
+}
+while(randomNumber3==randomNumber1||randomNumber3==randomNumber2)
+
+do{
+  randomNumber4=Math.round(Math.random()*3)+1;
+}
+while(randomNumber4==randomNumber3||randomNumber4==randomNumber2||randomNumber4==randomNumber1)
+
+
+
+if(randomNumber1==1){
+document.getElementById("choice-5-1").innerHTML=JSON.parse(Trivia.response).results[4].correct_answer;
+}
+else if(randomNumber1==2){
+  document.getElementById("choice-5-2").innerHTML=JSON.parse(Trivia.response).results[4].correct_answer;
+}
+else if(randomNumber1==3){
+  document.getElementById("choice-5-3").innerHTML=JSON.parse(Trivia.response).results[4].correct_answer;
+}
+else if(randomNumber1==4){
+  document.getElementById("choice-5-4").innerHTML=JSON.parse(Trivia.response).results[4].correct_answer;
+
+}
+
+
+if(randomNumber2==1){
+document.getElementById("choice-5-1").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[0];
+}
+else if(randomNumber2==2){
+  document.getElementById("choice-5-2").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[0];
+}
+else if(randomNumber2==3){
+  document.getElementById("choice-5-3").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[0];
+}
+else if(randomNumber2==4){
+  document.getElementById("choice-5-4").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[0];
+
+}
+
+if(randomNumber3==1){
+  document.getElementById("choice-5-1").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[1];
+  }
+  else if(randomNumber3==2){
+    document.getElementById("choice-5-2").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[1];
+  }
+  else if(randomNumber3==3){
+    document.getElementById("choice-5-3").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[1];
+  }
+  else if(randomNumber3==4){
+    document.getElementById("choice-5-4").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[1];
+  
+  }
+  
+  if(randomNumber4==1){
+    document.getElementById("choice-5-1").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[2];
+    }
+    else if(randomNumber4==2){
+      document.getElementById("choice-5-2").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[2];
+    }
+    else if(randomNumber4==3){
+      document.getElementById("choice-5-3").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[2];
+    }
+    else if(randomNumber4==4){
+      document.getElementById("choice-5-4").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[2];
+    
+    }
+
+set6();
+}
+
+
+
+
+function set6(){
+var randomNumber1=Math.round(Math.random()*3)+1;
+var randomNumber2=Math.round(Math.random()*3)+1;
+var randomNumber3=Math.round(Math.random()*3)+1;
+var randomNumber4=Math.round(Math.random()*3)+1;
+
+
+  do{
+    randomNumber2=Math.round(Math.random()*3)+1;
+  }
+  while(randomNumber1==randomNumber2)
+
+
+do{
+  randomNumber3=Math.round(Math.random()*3)+1;
+}
+while(randomNumber3==randomNumber1||randomNumber3==randomNumber2)
+
+do{
+  randomNumber4=Math.round(Math.random()*3)+1;
+}
+while(randomNumber4==randomNumber3||randomNumber4==randomNumber2||randomNumber4==randomNumber1)
+
+
+
+if(randomNumber1==1){
+document.getElementById("choice-6-1").innerHTML=JSON.parse(Trivia.response).results[5].correct_answer;
+}
+else if(randomNumber1==2){
+  document.getElementById("choice-6-2").innerHTML=JSON.parse(Trivia.response).results[5].correct_answer;
+}
+else if(randomNumber1==3){
+  document.getElementById("choice-6-3").innerHTML=JSON.parse(Trivia.response).results[5].correct_answer;
+}
+else if(randomNumber1==4){
+  document.getElementById("choice-6-4").innerHTML=JSON.parse(Trivia.response).results[5].correct_answer;
+
+}
+
+
+if(randomNumber2==1){
+document.getElementById("choice-5-1").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[0];
+}
+else if(randomNumber2==2){
+  document.getElementById("choice-5-2").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[0];
+}
+else if(randomNumber2==3){
+  document.getElementById("choice-5-3").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[0];
+}
+else if(randomNumber2==4){
+  document.getElementById("choice-5-4").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[0];
+
+}
+
+if(randomNumber3==1){
+  document.getElementById("choice-5-1").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[1];
+  }
+  else if(randomNumber3==2){
+    document.getElementById("choice-5-2").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[1];
+  }
+  else if(randomNumber3==3){
+    document.getElementById("choice-5-3").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[1];
+  }
+  else if(randomNumber3==4){
+    document.getElementById("choice-5-4").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[1];
+  
+  }
+  
+  if(randomNumber4==1){
+    document.getElementById("choice-5-1").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[2];
+    }
+    else if(randomNumber4==2){
+      document.getElementById("choice-5-2").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[2];
+    }
+    else if(randomNumber4==3){
+      document.getElementById("choice-5-3").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[2];
+    }
+    else if(randomNumber4==4){
+      document.getElementById("choice-5-4").innerHTML=JSON.parse(Trivia.response).results[4].incorrect_answers[2];
+    
+    }
+
+set6();
+}
+
+
+
+
+
